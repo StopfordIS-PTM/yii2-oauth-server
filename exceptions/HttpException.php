@@ -1,6 +1,6 @@
 <?php
 
-namespace eartotheground\yii2\oauth2server\exceptions;
+namespace tomyates\yii2\oauth2server\exceptions;
 
 class HttpException extends \yii\web\HttpException
 {
