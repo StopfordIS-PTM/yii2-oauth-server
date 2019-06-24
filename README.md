@@ -11,7 +11,7 @@ Add the following to your `composer.json` file to look for packages in this repo
 "repositories": [
     {
         "type": "vcs",
-        "url": "git@gitlab.tariffstreet.com:tomyates/yii2-oauth2-server.git"
+        "url": "git@github.com:tomyates/yii2-oauth2-server.git"
     }
 ],
 ```
