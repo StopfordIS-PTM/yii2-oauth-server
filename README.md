@@ -18,7 +18,7 @@ Add the following to your `composer.json` file to look for packages in this repo
 
 Then..
 
-`composer require stopfordis-ptm/yii2-oauth2-server`
+`composer require stopfordisptm/yii2-oauth2-server`
 
 # Set up
 
