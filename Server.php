@@ -1,13 +1,13 @@
 <?php
 
-namespace tomyates\yii2\oauth2server;
+namespace stopfordisptm\yii2\oauth2server;
 
 class Server extends \OAuth2\Server
 {
     use traits\ClassNamespace;
     
     /**
-     * @var \tomyates\yii2\oauth2server\Module
+     * @var \stopfordisptm\yii2\oauth2server\Module
      */
     protected $module;
     

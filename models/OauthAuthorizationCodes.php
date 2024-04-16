@@ -1,6 +1,6 @@
 <?php
 
-namespace tomyates\yii2\oauth2server\models;
+namespace stopfordisptm\yii2\oauth2server\models;
 
 use Yii;
 

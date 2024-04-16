@@ -1,11 +1,11 @@
 <?php
 
-namespace tomyates\yii2\oauth2server\filters;
+namespace stopfordisptm\yii2\oauth2server\filters;
 
 use Yii;
 use yii\base\Controller;
-use tomyates\yii2\oauth2server\Module;
-use tomyates\yii2\oauth2server\exceptions\HttpException;
+use stopfordisptm\yii2\oauth2server\Module;
+use stopfordisptm\yii2\oauth2server\exceptions\HttpException;
 
 class ErrorToExceptionFilter extends \yii\base\Behavior
 {

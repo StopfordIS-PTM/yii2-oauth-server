@@ -1,8 +1,8 @@
 <?php
 
-namespace tomyates\yii2\oauth2server\filters\auth;
+namespace stopfordisptm\yii2\oauth2server\filters\auth;
 
-use tomyates\yii2\oauth2server\Module;
+use stopfordisptm\yii2\oauth2server\Module;
 
 class CompositeAuth extends \yii\filters\auth\CompositeAuth
 {

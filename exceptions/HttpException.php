@@ -1,6 +1,6 @@
 <?php
 
-namespace tomyates\yii2\oauth2server\exceptions;
+namespace stopfordisptm\yii2\oauth2server\exceptions;
 
 class HttpException extends \yii\web\HttpException
 {

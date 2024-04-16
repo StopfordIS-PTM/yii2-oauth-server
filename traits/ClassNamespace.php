@@ -1,6 +1,6 @@
 <?php
 
-namespace tomyates\yii2\oauth2server\traits;
+namespace stopfordisptm\yii2\oauth2server\traits;
 
 trait ClassNamespace
 {

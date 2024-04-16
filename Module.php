@@ -1,6 +1,6 @@
 <?php
 
-namespace tomyates\yii2\oauth2server;
+namespace stopfordisptm\yii2\oauth2server;
 
 use \Yii;
 use yii\i18n\PhpMessageSource;
@@ -11,7 +11,7 @@ use  \array_key_exists;
  * 
  * ```php
  * 'oauth2' => [
- *     'class' => 'tomyates\yii2\oauth2server\Module',
+ *     'class' => 'stopfordisptm\yii2\oauth2server\Module',
  *     'tokenParamName' => 'accessToken',
  *     'tokenAccessLifetime' => 3600 * 24,
  *     'storageMap' => [
@@ -80,7 +80,7 @@ class Module extends \yii\base\Module
     /**
      * Gets Oauth2 Server
      * 
-     * @return \tomyates\yii2\oauth2server\Server
+     * @return \stopfordisptm\yii2\oauth2server\Server
      * @throws \yii\base\InvalidConfigException
      */
     public function getServer()
@@ -102,8 +102,8 @@ class Module extends \yii\base\Module
                 \Yii::$container->set('access_token', $this->storageMap['access_token']);
             }
             
-            foreach(array_keys($this->storageMap) as $name) {
-                $storages[$name] = \Yii::$container->get($name);
+            foreach ($this->storageMap as $name => $class) { 
+                $storages[$name] = \Yii::$container->get($class);
             }
             
             $grantTypes = [];
@@ -141,16 +141,14 @@ class Module extends \yii\base\Module
     
     public function getRequest()
     {
-        if(!$this->has('request')) {
-            $this->set('request', Request::createFromGlobals());
-        }
+        $this->set('request', \OAuth2\Request::createFromGlobals());
         return $this->get('request');
     }
     
     public function getResponse()
     {
         if(!$this->has('response')) {
-            $this->set('response', new Response());
+            $this->set('response', new \OAuth2\Response());
         }
         return $this->get('response');
     }

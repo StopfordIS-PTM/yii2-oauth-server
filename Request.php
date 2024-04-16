@@ -1,6 +1,6 @@
 <?php
 
-namespace tomyates\yii2\oauth2server;
+namespace stopfordisptm\yii2\oauth2server;
 
 class Request extends \OAuth2\Request
 {

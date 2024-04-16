@@ -1,10 +1,10 @@
 <?php
 
-namespace tomyates\yii2\oauth2server\controllers;
+namespace stopfordisptm\yii2\oauth2server\controllers;
 
 use Yii;
 use yii\helpers\ArrayHelper;
-use tomyates\yii2\oauth2server\filters\ErrorToExceptionFilter;
+use stopfordisptm\yii2\oauth2server\filters\ErrorToExceptionFilter;
 
 class DefaultController extends \yii\rest\Controller
 {
