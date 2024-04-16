@@ -11,14 +11,14 @@ Add the following to your `composer.json` file to look for packages in this repo
 "repositories": [
     {
         "type": "vcs",
-        "url": "git@github.com:stopfordisptm/yii2-oauth2-server.git"
+        "url": "git@github.com:StopfordIS-PTM/yii2-oauth2-server.git"
     }
 ],
 ```
 
 Then..
 
-`composer require stopfordisptm/yii2-oauth2-server`
+`composer require stopfordis-ptm/yii2-oauth2-server`
 
 # Set up
 
